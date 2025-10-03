@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu" class="hidden md:flex space-x-6 font-semibold">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About</a>
+        <a href="services.html" class="hover:text-yellow-300">Services</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="text-center py-16 bg-gradient-to-r from-indigo-100 to-purple-100">
+    <img src="/IMG/MY PIC.jpg" alt="Hero" class="w-40 h-40 mx-auto rounded-full shadow-lg mb-6 object-cover">
+    <h2 class="text-4xl font-bold mb-4">Hey 👋 I’m Habib</h2>
+    <p class="max-w-xl mx-auto mb-6 text-lg">A web designer & developer who builds responsive, user-friendly, and delightful digital experiences.</p>
+    <a href="about.html" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Learn More</a>
+  </section>
+
+  
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Featured Projects</h3>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="IMG/project1.jpg" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Project One</h4>
+          <p class="text-gray-600">A modern blog website built with HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transform transition">
+        <img src="IMG/project2.jpg" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Project Two</h4>
+          <p class="text-gray-600">An e-commerce storefront with smooth checkout integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-gray-100 py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Testimonials</h3>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <p class="italic text-gray-600">“Habib is a highly skilled developer who transformed our website into something modern and user-friendly.”</p>
+        <h4 class="mt-4 font-bold">– Sarah K.</h4>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <p class="italic text-gray-600">“Professional, creative, and very responsive. Working with Habib was a pleasure.”</p>
+        <h4 class="mt-4 font-bold">– James M.</h4>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <p class="italic text-gray-600">“Delivered exactly what we needed, on time and with great attention to detail.”</p>
+        <h4 class="mt-4 font-bold">– Anita L.</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Habib Portfolio. All rights reserved.</p>
+    <div class="flex justify-center space-x-6 mt-3">
+      <a href="https://github.com/dashboard" target="_blank" class="hover:text-yellow-400"><i class="fab fa-github"></i></a>
+      <a href="https://app.netlify.com/teams/habib-254-aft/projects" target="_blank">
+        <img src="IMG/netlify.svg" alt="Netlify" class="w-6 h-6 inline hover:opacity-70">
+         <a href="https://linkedin.com/" target="_blank" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/" target="_blank" class="hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
